@@ -70,11 +70,10 @@ class ChatController extends Controller
                 "session_id"  => $returnMessage['sessionId']
             ],
         ];
-
         if ($returnMessage["dialogState"] != "ReadyForFulfillment") {
             $newMessage[] =
                 [
-                    'message'     => $returnMessage["message"],
+                    'message'     => $this->makeUrltoLink($returnMessage["message"]),
                     'sender_name' => $this->senderBotName,
                     'sender_id'   => $this->senderBotId,
                     "session_id"  => $returnMessage['sessionId']
@@ -103,11 +102,11 @@ class ChatController extends Controller
             "messages"    => $messsages
         ], Response::HTTP_OK);
     }
-    public function getSessionMessage($session_id)
-    {
-        $chats = Chat::where('session_id',$session_id)->orderBy('id','ASC')->get();
-        return response()->json([
-            "chats" => $chats
-        ], Response::HTTP_OK);
+    public static function makeUrltoLink($string) {
+        // The Regular Expression filter
+        $reg_pattern = "/(((http|https|ftp|ftps)\:\/\/)|(www\.))[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\:[0-9]+)?(\/\S*)?/";
+        
+        // make the urls to hyperlinks
+        return preg_replace($reg_pattern, '<a href="$0" target="_blank" style="color:blue !important;" rel="noopener noreferrer">$0</a>', $string);
     }
 }
