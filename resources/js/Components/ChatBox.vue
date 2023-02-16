@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, defineProps, toRefs, defineEmits } from "vue";
+import { onMounted, ref, toRefs} from "vue";
 import API from "../utils/API";
 import { useRouter } from "vue-router";
 
@@ -138,7 +138,7 @@ const fetchMessage = (incomingMessages) => {
                                 </div> -->
 
 
-        <el-drawer v-model="drawerView"  :before-close="closeDrawer">
+        <el-drawer v-model="drawerView"  :before-close="closeDrawer" class="chat-drawer">
             <template #header>
                 <el-row class="demo-avatar demo-basic">
                     <el-avatar class="el-icon--left"
@@ -235,7 +235,7 @@ const fetchMessage = (incomingMessages) => {
 .container-chatbox {
     overflow-y: auto !important;
 }
-.el-drawer__body {
+.chat-drawer .el-drawer__body {
     overflow: hidden !important;
 }
 </style>
