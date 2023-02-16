@@ -238,4 +238,8 @@ const fetchMessage = (incomingMessages) => {
 .chat-drawer .el-drawer__body {
     overflow: hidden !important;
 }
+.chat-drawer {
+    max-width: 500px !important;
+    width: 100%  !important;
+}
 </style>
