@@ -159,7 +159,8 @@ const fetchMessage = (incomingMessages) => {
                                 <div class="relative max-w-xl px-4 py-2 text-gray-700 rounded shadow"
                                     :class="message.sender_name != message.sender_id ? 'bg-gray-100' : ''">
                                     <span class="block">{{ message.sender_name ? message.sender_name : "You" }} :
-                                        <div v-html="message.message"></div></span>
+                                        <span v-html="message.message"></span>
+                                        </span>
                                 </div>
                             </li>
                         </ul>
