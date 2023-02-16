@@ -52,7 +52,6 @@ const addMessage = async (newMessageFromSendMessage) => {
     console.error(e);
   }
 };
-
 const sendMessage = () => {
   // console.log(newMessage.value)
   if (newMessage.value.trim()) {
@@ -134,10 +133,11 @@ const fetchMessage = (incomingMessages) => {
           <div class="row mb-2">
             <div
               class="mb-2"
-              v-for="message in messages"
+              v-for="(message,index) in messages"
               v-bind:key="message.id"
             >
               <label
+                :id="index"
                 :class="
                   message.sender_name == message.sender_id
                     ? 'col-md-12 text-md-start'

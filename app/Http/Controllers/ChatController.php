@@ -103,4 +103,11 @@ class ChatController extends Controller
             "messages"    => $messsages
         ], Response::HTTP_OK);
     }
+    public function getSessionMessage($session_id)
+    {
+        $chats = Chat::where('session_id',$session_id)->orderBy('id','ASC')->get();
+        return response()->json([
+            "chats" => $chats
+        ], Response::HTTP_OK);
+    }
 }

@@ -29,5 +29,7 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::prefix('chat')->group(function(){
         Route::post('/init', [ChatController::class, 'init']);
         Route::post('/send', [ChatController::class, 'send']);
+        Route::post('/chats/{session_id}', [ChatController::class, 'getSessionMessage']);
+        
     });
 });
