@@ -1,0 +1,1 @@
+import{i as o}from"./app.6787fef2.js";const r=o.create({baseURL:"http://localhost:8000/api",headers:{"Content-Type":"application/json",Accept:"application/json"},withCredentials:!0,timeout:5e3});r.interceptors.request.use(e=>{const t=localStorage.getItem("token");return t&&(e.headers.Authorization=`Bearer ${t}`),e},e=>{Promise.reject(e)});export{r as A};

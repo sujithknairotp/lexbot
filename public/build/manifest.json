@@ -12,7 +12,7 @@
     "src": "resources/js/images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.bea3254e.js",
+    "file": "assets/app.6787fef2.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -26,31 +26,31 @@
     ]
   },
   "resources/js/Pages/Login.vue": {
-    "file": "assets/Login.fabf0e6a.js",
+    "file": "assets/Login.f46349cc.js",
     "src": "resources/js/Pages/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_API.ad440159.js"
+      "_API.a17ec631.js"
     ]
   },
-  "_API.ad440159.js": {
-    "file": "assets/API.ad440159.js",
+  "_API.a17ec631.js": {
+    "file": "assets/API.a17ec631.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Dashboard.vue": {
-    "file": "assets/Dashboard.a9fb65f3.js",
+    "file": "assets/Dashboard.93b8b9df.js",
     "src": "resources/js/Pages/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_TheNavbar.54dbdc94.js",
+      "_TheNavbar.5027aac3.js",
       "resources/js/app.js",
-      "_API.ad440159.js"
+      "_API.a17ec631.js"
     ],
     "css": [
-      "assets/Dashboard.60ee1f4d.css"
+      "assets/Dashboard.eab0bb01.css"
     ],
     "assets": [
       "assets/portrait-successful-mid-adult-doctor-with-crossed-arms.532d5a16.jpg",
@@ -58,25 +58,25 @@
       "assets/doctor-s-hand-holding-stethoscope-closeup.c71bd5e4.jpg"
     ]
   },
-  "_TheNavbar.54dbdc94.js": {
-    "file": "assets/TheNavbar.54dbdc94.js",
+  "_TheNavbar.5027aac3.js": {
+    "file": "assets/TheNavbar.5027aac3.js",
     "imports": [
-      "_API.ad440159.js",
+      "_API.a17ec631.js",
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Chat.vue": {
-    "file": "assets/Chat.91758593.js",
+    "file": "assets/Chat.816b6974.js",
     "src": "resources/js/Pages/Chat.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_API.ad440159.js",
-      "_TheNavbar.54dbdc94.js"
+      "_API.a17ec631.js",
+      "_TheNavbar.5027aac3.js"
     ]
   },
   "resources/js/Pages/NotFound.vue": {
-    "file": "assets/NotFound.aea52cf6.js",
+    "file": "assets/NotFound.a5b48320.js",
     "src": "resources/js/Pages/NotFound.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -84,7 +84,7 @@
     ]
   },
   "resources/js/Pages/Dashboard.css": {
-    "file": "assets/Dashboard.60ee1f4d.css",
+    "file": "assets/Dashboard.eab0bb01.css",
     "src": "resources/js/Pages/Dashboard.css"
   },
   "resources/css/app.css": {
