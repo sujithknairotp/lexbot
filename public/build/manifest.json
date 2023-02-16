@@ -12,7 +12,7 @@
     "src": "resources/js/images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.6787fef2.js",
+    "file": "assets/app.bea3254e.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -26,28 +26,28 @@
     ]
   },
   "resources/js/Pages/Login.vue": {
-    "file": "assets/Login.f46349cc.js",
+    "file": "assets/Login.fabf0e6a.js",
     "src": "resources/js/Pages/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_API.a17ec631.js"
+      "_API.ad440159.js"
     ]
   },
-  "_API.a17ec631.js": {
-    "file": "assets/API.a17ec631.js",
+  "_API.ad440159.js": {
+    "file": "assets/API.ad440159.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Dashboard.vue": {
-    "file": "assets/Dashboard.93b8b9df.js",
+    "file": "assets/Dashboard.a9fb65f3.js",
     "src": "resources/js/Pages/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_TheNavbar.5027aac3.js",
+      "_TheNavbar.54dbdc94.js",
       "resources/js/app.js",
-      "_API.a17ec631.js"
+      "_API.ad440159.js"
     ],
     "css": [
       "assets/Dashboard.60ee1f4d.css"
@@ -58,25 +58,25 @@
       "assets/doctor-s-hand-holding-stethoscope-closeup.c71bd5e4.jpg"
     ]
   },
-  "_TheNavbar.5027aac3.js": {
-    "file": "assets/TheNavbar.5027aac3.js",
+  "_TheNavbar.54dbdc94.js": {
+    "file": "assets/TheNavbar.54dbdc94.js",
     "imports": [
-      "_API.a17ec631.js",
+      "_API.ad440159.js",
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Chat.vue": {
-    "file": "assets/Chat.816b6974.js",
+    "file": "assets/Chat.91758593.js",
     "src": "resources/js/Pages/Chat.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_API.a17ec631.js",
-      "_TheNavbar.5027aac3.js"
+      "_API.ad440159.js",
+      "_TheNavbar.54dbdc94.js"
     ]
   },
   "resources/js/Pages/NotFound.vue": {
-    "file": "assets/NotFound.a5b48320.js",
+    "file": "assets/NotFound.aea52cf6.js",
     "src": "resources/js/Pages/NotFound.vue",
     "isDynamicEntry": true,
     "imports": [
