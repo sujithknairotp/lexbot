@@ -6,6 +6,7 @@ import { useRouter } from "vue-router";
 
 const router = useRouter
 
+
 const messages = ref([]);
 const newMessage = ref("");
 const messageEnded = ref(false);
