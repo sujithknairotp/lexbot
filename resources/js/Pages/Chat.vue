@@ -144,7 +144,8 @@ const fetchMessage = (incomingMessages) => {
                     : 'col-md-12 text-md-end'
                 "
                 >{{ message.sender_name ? message.sender_name : "You" }} :
-                {{ message.message }}
+                <div v-html="message.message">
+                </div>
               </label>
             </div>
             <br />
