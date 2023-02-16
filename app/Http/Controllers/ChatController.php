@@ -60,7 +60,7 @@ class ChatController extends Controller
 
         $returnMessage = $lexRuntimeServiceClient->postText($newMessage);
 
-        // dd($returnMessage);
+        //dd($returnMessage);
 
         $newMessage = [
             [
