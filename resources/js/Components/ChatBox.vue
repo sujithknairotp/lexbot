@@ -159,24 +159,10 @@ const fetchMessage = (incomingMessages) => {
                                 <div class="relative max-w-xl px-4 py-2 text-gray-700 rounded shadow"
                                     :class="message.sender_name != message.sender_id ? 'bg-gray-100' : ''">
                                     <span class="block">{{ message.sender_name ? message.sender_name : "You" }} :
-                                        {{ message.message }}</span>
+                                        <div v-html="message.message"></div></span>
                                 </div>
                             </li>
                         </ul>
-
-                        <div v-if="false" class="row mb-2">
-                            <div class="mb-2" v-for="(message, index) in messages" v-bind:key="message.id">
-                                <label :id="index" :class="
-                                    message.sender_name == message.sender_id
-                                        ? 'col-md-12 text-md-start'
-                                        : 'col-md-12 text-md-end'
-                                ">{{ message.sender_name ? message.sender_name : "You" }} :
-                                    {{ message.message }}
-                                </label>
-                            </div>
-                            <br />
-                        </div>
-
                     </div>
                 </div>
             </template>
